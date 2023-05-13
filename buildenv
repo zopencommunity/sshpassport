@@ -29,6 +29,8 @@ export ZOPEN_TYPE="TARBALL"
 # Many packages will require basic tools like m4, make.
 #
 export ZOPEN_TARBALL_URL="https://gigenet.dl.sourceforge.net/project/sshpass/sshpass/1.06/sshpass-1.06.tar.gz"
+export ZOPEN_TARBALL_DEPS="make gzip tar zoslib"
+
 export ZOPEN_GIT_URL="https://git.code.sf.net/p/sshpass/code-git"
 export ZOPEN_GIT_DEPS="make git gzip zoslib automake autoconf m4"
 
