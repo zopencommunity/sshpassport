@@ -12,7 +12,7 @@
 # For this example, we are specifying that we will use a zipped tarball format
 # for our build.
 #
-export ZOPEN_TYPE="TAR"
+export ZOPEN_TYPE="TARBALL"
 
 #
 # Given the ZOPEN_TYPE, build.sh will then need to know where to download from,
