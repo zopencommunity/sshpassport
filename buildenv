@@ -28,7 +28,7 @@ export ZOPEN_TYPE="TARBALL"
 #  - git: required by build.sh to be able to apply patches
 # Many packages will require basic tools like m4, make.
 #
-export ZOPEN_TARBALL_URL="https://master.dl.sourceforge.net/project/sshpass/sshpass/1.07/sshpass-1.07.tar.gz"
+export ZOPEN_TARBALL_URL="https://cytranet.dl.sourceforge.net/project/sshpass/sshpass/1.08/sshpass-1.08.tar.gz"
 export ZOPEN_TARBALL_DEPS="make gzip tar zoslib"
 
 export ZOPEN_GIT_URL="https://git.code.sf.net/p/sshpass/code-git"
