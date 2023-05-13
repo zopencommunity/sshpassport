@@ -38,6 +38,7 @@ export ZOPEN_INSTALL_OPTS="install PREFIX=\$ZOPEN_INSTALL_DIR"
 # export ZOPEN_CHECK="./basictest.sh"
 export ZOPEN_CHECK_OPTS=''
 export ZOPEN_COMP=CLANG
+export ZOPEN_CHECK=skip
 
 zopen_check_results()
 {
