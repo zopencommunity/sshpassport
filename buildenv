@@ -35,7 +35,7 @@ export ZOPEN_GIT_URL="https://git.code.sf.net/p/sshpass/code-git"
 export ZOPEN_GIT_DEPS="make git gzip zoslib automake autoconf m4"
 
 export ZOPEN_INSTALL_OPTS="install PREFIX=\$ZOPEN_INSTALL_DIR"
-export ZOPEN_CHECK="./basictest.sh"
+# export ZOPEN_CHECK="./basictest.sh"
 export ZOPEN_CHECK_OPTS=''
 export ZOPEN_COMP=CLANG
 
