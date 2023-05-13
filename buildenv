@@ -48,7 +48,6 @@ chk="$1/$2_check.log"
 
 totalTests=0
 actualErrors=0
-actualPass=
 expectedErrors=0
 
 cat <<ZZ
