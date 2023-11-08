@@ -1,4 +1,4 @@
-# bump: sshpass-version /SSHPASS_VERSION="(.*)"/ https://sourceforge.net/projects/sshpass/files/sshpass/|re:/latest(.*)sshpass-([\d.]+).tar.gz/$2/|semver:*
+# bump: sshpass-version /SSHPASS_VERSION="(.*)"/ https://sourceforge.net/projects/sshpass/files/sshpass/|re:/Click.to.enter.([\d.]+)"/$1/|semver:*
 SSHPASS_VERSION="1.09"
 
 export ZOPEN_BUILD_LINE="STABLE"
