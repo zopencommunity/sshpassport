@@ -1,0 +1,18 @@
+diff --git a/main.c b/main.c
+index 2bad28b..406a127 100644
+--- a/main.c
++++ b/main.c
+@@ -339,10 +339,13 @@ int runprogram( int argc, char *argv[] )
+         slavept=open(name, O_RDWR | O_NOCTTY);
+         // On some systems, an open(2) is insufficient to set the controlling tty (see the documentation for
+         // TIOCSCTTY in tty(4)).
++#ifndef __MVS__
++        // z/OS does not support TIOCSCTTY, but setsid should be sufficient to create a new session and detach from the current terminal.
+         if (ioctl(slavept, TIOCSCTTY, 0) == -1) {
+             perror("sshpass: Failed to set controlling terminal in child (TIOCSCTTY)");
+             exit(RETURN_RUNTIME_ERROR);
+         }
++#endif
+         close( slavept ); // We don't need the controlling TTY actually open
+ 
+         close( masterpt );

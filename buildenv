@@ -9,10 +9,11 @@ export ZOPEN_DEV_URL="https://git.code.sf.net/p/sshpass/code-git"
 export ZOPEN_DEV_DEPS="make git gzip zoslib automake autoconf m4"
 
 export ZOPEN_INSTALL_OPTS="install PREFIX=\$ZOPEN_INSTALL_DIR"
-# export ZOPEN_CHECK="./basictest.sh"
-export ZOPEN_CHECK_OPTS=''
+export ZOPEN_CHECK="skip" # no test
 export ZOPEN_COMP=CLANG
 export ZOPEN_CHECK=skip
+
+export ac_cv_func_malloc_0_nonnull="yes"
 
 zopen_check_results()
 {
