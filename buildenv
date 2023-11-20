@@ -1,5 +1,5 @@
 # bump: sshpass-version /SSHPASS_VERSION="(.*)"/ https://sourceforge.net/projects/sshpass/files/sshpass/|re:/Click.to.enter.([\d.]+)"/$1/|semver:*
-SSHPASS_VERSION="1.09"
+SSHPASS_VERSION="1.10"
 
 export ZOPEN_BUILD_LINE="STABLE"
 export ZOPEN_STABLE_URL="https://master.dl.sourceforge.net/project/sshpass/sshpass/${SSHPASS_VERSION}/sshpass-${SSHPASS_VERSION}.tar.gz"
@@ -9,10 +9,12 @@ export ZOPEN_DEV_URL="https://git.code.sf.net/p/sshpass/code-git"
 export ZOPEN_DEV_DEPS="make git gzip zoslib automake autoconf m4"
 
 export ZOPEN_INSTALL_OPTS="install PREFIX=\$ZOPEN_INSTALL_DIR"
-# export ZOPEN_CHECK="./basictest.sh"
-export ZOPEN_CHECK_OPTS=''
+export ZOPEN_CHECK="skip" # no test
 export ZOPEN_COMP=CLANG
 export ZOPEN_CHECK=skip
+
+# To avoid build failure due to rpl_malloc not found
+export ac_cv_func_malloc_0_nonnull="yes"
 
 zopen_check_results()
 {
