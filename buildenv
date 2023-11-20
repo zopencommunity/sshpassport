@@ -13,6 +13,7 @@ export ZOPEN_CHECK="skip" # no test
 export ZOPEN_COMP=CLANG
 export ZOPEN_CHECK=skip
 
+# To avoid build failure due to rpl_malloc not found
 export ac_cv_func_malloc_0_nonnull="yes"
 
 zopen_check_results()
