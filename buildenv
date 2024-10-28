@@ -2,6 +2,7 @@
 SSHPASS_VERSION="1.10"
 
 export ZOPEN_BUILD_LINE="STABLE"
+export ZOPEN_CATEGORIES="security"
 export ZOPEN_STABLE_URL="https://master.dl.sourceforge.net/project/sshpass/sshpass/${SSHPASS_VERSION}/sshpass-${SSHPASS_VERSION}.tar.gz"
 export ZOPEN_STABLE_DEPS="make gzip tar zoslib"
 
